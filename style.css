@@ -43,6 +43,12 @@ a {
   height: 100vh;
 }
 
+.parent {
+  /* CREATE A STACKIONG CONTEXT*/
+	/* isolation: isolate; */
+}
+
+
 
 .main img {
   position: relative;
@@ -57,9 +63,13 @@ a {
   top: 0;
   height: 100%;
   width: 0vw;
+  /*
   background-color: rgba(0, 26, 255, 0.5);
-  /* mix-blend-mode: screen; */
-  background-blend-mode: darken;
+  mix-blend-mode: screen; 
+  background-blend-mode: exclusion; 
+  */
+  background: hsl(66, 100%, 50%);
+  mix-blend-mode: multiply;
   animation: move-layer 15s infinite;
 }
 
